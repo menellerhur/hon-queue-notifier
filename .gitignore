@@ -1,0 +1,13 @@
+# Build output; build.cmd also copies the exe here
+bin/
+obj/
+/HonQueueNotifier.exe
+
+# Python for the scripts in tools/ (tools/assets/README.md makes .venv here)
+.venv/
+__pycache__/
+
+# Created by Visual Studio and Claude Code on each machine
+.vs/
+*.user
+.claude/settings.local.json

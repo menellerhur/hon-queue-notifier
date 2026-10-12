@@ -1,0 +1,5 @@
+fonttools
+skia-pathops
+miniaudio
+numpy
+scipy

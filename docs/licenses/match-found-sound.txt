@@ -1,0 +1,14 @@
+assets/match-found.wav
+
+Source: "Successful accepted reward" by tithuh, downloaded from Pixabay (pixabay.com, item 523721).
+
+Licence: Pixabay Content License (https://pixabay.com/service/license-summary/). The sound may be
+used free of charge and without attribution, also modified and as part of a larger work such as
+this program. It may not be sold or distributed on its own, unchanged ("standalone").
+
+Changes made for this program: mixed from stereo to mono; from 1.1 seconds it fades out faster
+than the original, most of the fade right away and then gently, with the high ringing losing most
+and the low tone least (split into three frequency bands; the original rings on for almost
+5 seconds); it ends at 2.2 seconds; stored as an IMA ADPCM WAV (4 bits per sample, 44.1 kHz).
+
+Do not offer it as a separate download (for example as a loose file in a release); it ships compiled into the exe.

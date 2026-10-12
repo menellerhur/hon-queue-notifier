@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- .NET Framework 4.8 is built into every Windows 10 and 11: players download one small exe and run it. -->
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>HonQueueNotifier</RootNamespace>
+    <AssemblyName>HonQueueNotifier</AssemblyName>
+    <Product>HoN Queue Notifier</Product>
+    <AssemblyTitle>HoN Queue Notifier</AssemblyTitle>
+    <Version>1.0.0</Version>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Deterministic>true</Deterministic>
+    <!-- The exe file's icon in Explorer, made from the program's own drawing by tools/assets/make_exe_icon.ps1. -->
+    <ApplicationIcon>..\..\assets\app-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <!-- The popup font, the built-in sound and the icon, compiled into the exe. Read with AppFiles.Resource(name). -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\assets\popup-font.ttf" LogicalName="popup-font.ttf" />
+    <EmbeddedResource Include="..\..\assets\match-found.wav" LogicalName="match-found.wav" />
+    <EmbeddedResource Include="..\..\assets\app-icon.svg" LogicalName="app-icon.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="HonQueueNotifier.Tests" />
+  </ItemGroup>
+
+  <!-- Build-time only: lets the .NET SDK compile for .NET Framework 4.8. Nothing from it ships. -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

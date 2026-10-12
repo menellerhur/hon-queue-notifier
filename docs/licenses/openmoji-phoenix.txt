@@ -1,0 +1,12 @@
+The program's icon (assets/app-icon.svg, drawn in the tray, on the program's windows and, as
+assets/app-icon.ico, on the exe file) is adapted
+from the phoenix emoji of OpenMoji:
+
+  Phoenix (U+1F426 U+200D U+1F525), designed by Vanessa Stoessinger (2024) for
+  OpenMoji, the open-source emoji and icon project, https://openmoji.org
+  License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/
+
+Changes: drawn in one colour, the emoji's outlines cut out of the shape, its empty margin cropped.
+The adapted icon is licensed under CC BY-SA 4.0 as well. The original file is kept, unchanged, as
+tools/assets/openmoji-phoenix.svg; tools/assets/make_icon.ps1 makes the icon from it, and
+tools/assets/make_exe_icon.ps1 makes assets/app-icon.ico from that.
